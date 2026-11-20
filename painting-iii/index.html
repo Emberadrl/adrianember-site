@@ -19,6 +19,7 @@
     .gallery { max-width: 640px; margin: 0 auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; align-items: start; }
     figure { margin: 0; }
     figure img { display: block; width: 100%; height: auto; }
+    figcaption { margin-top: 8px; }
     footer { border-top: 1px solid #d5dddd; padding: 28px max(5vw, 24px); text-align: center; font-size: .9rem; }
     @media (max-width: 640px) { .header-inner { align-items: flex-start; flex-direction: column; } .gallery { grid-template-columns: 1fr; gap: 20px; } main { padding-top: 32px; } }
   </style>
@@ -43,7 +44,10 @@
       <figure><img fetchpriority="high" decoding="async" src="https://adrianemberley.ca/wp-content/uploads/2026/03/DSCN5654-1-scaled.jpg" alt="Painting from the Painting III series"></figure>
       <figure><img loading="lazy" decoding="async" src="https://adrianemberley.ca/wp-content/uploads/2026/03/ae2ggg-1.jpg" alt="Painting from the Painting III series"></figure>
       <figure><img loading="lazy" decoding="async" src="https://adrianemberley.ca/wp-content/uploads/2026/03/DSCN7975-1-scaled.jpg" alt="Painting from the Painting III series"></figure>
-      <figure><img loading="lazy" decoding="async" src="https://adrianemberley.ca/wp-content/uploads/2026/03/IMG_0974-1.jpg" alt="Painting from the Painting III series"></figure>
+      <figure>
+        <img loading="lazy" decoding="async" src="https://adrianemberley.ca/wp-content/uploads/2026/03/IMG_0974-1.jpg" alt="Painting from the Painting III series">
+        <figcaption>intersection 2023 oil on canvas 66&quot; x 76&quot;</figcaption>
+      </figure>
     </section>
   </main>
   <footer>Designed with <a href="https://github.com/">GitHub</a></footer>
