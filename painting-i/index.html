@@ -18,9 +18,13 @@
     .gallery { max-width: 760px; margin: 0 auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; align-items: start; }
     figure { margin: 0; }
     figure img { display: block; width: 100%; height: auto; }
+    figure.featured { width: 112%; margin-left: -6%; }
+    .bottom-row { width: 112%; }
+    .bottom-row:nth-of-type(odd) { margin-left: -6%; }
+    .bottom-row:nth-of-type(even) { margin-left: -6%; }
     figcaption { margin-top: 8px; }
     footer { border-top: 1px solid #d5dddd; padding: 28px max(5vw, 24px); text-align: center; font-size: .9rem; }
-    @media (max-width: 640px) { .header-inner { align-items: flex-start; flex-direction: column; } .gallery { grid-template-columns: 1fr; gap: 20px; } main { padding-top: 32px; } }
+    @media (max-width: 640px) { .header-inner { align-items: flex-start; flex-direction: column; } .gallery { grid-template-columns: 1fr; gap: 20px; } figure.featured, .bottom-row, .bottom-row:nth-of-type(odd), .bottom-row:nth-of-type(even) { width: 100%; margin-left: 0; } main { padding-top: 32px; } }
   </style>
 </head>
 <body>
@@ -43,20 +47,20 @@
         <img fetchpriority="high" decoding="async" src="https://adrianemberley.ca/wp-content/uploads/2026/02/IMG_8188-3-775x1024.jpg" alt="Kailua Rd. O'ahu">
         <figcaption>Kailua Rd. O'ahu 2025 oil on canvas 36&quot; x 48&quot;</figcaption>
       </figure>
-      <figure>
-        <img loading="lazy" decoding="async" src="https://adrianemberley.ca/wp-content/uploads/2026/02/IMG_7905-2-972x1024.jpg" alt="Painting I artwork">
+      <figure class="featured">
+        <img loading="lazy" decoding="async" src="https://adrianemberley.ca/wp-content/uploads/2026/02/IMG_7905-2-972x1024.jpg" alt="">
       </figure>
       <figure>
-        <img loading="lazy" decoding="async" src="https://adrianemberley.ca/wp-content/uploads/2026/02/IMG_6680-1-1024x733.jpg" alt="Painting I artwork">
+        <img loading="lazy" decoding="async" src="https://adrianemberley.ca/wp-content/uploads/2026/02/IMG_6680-1-1024x733.jpg" alt="">
       </figure>
       <figure>
-        <img loading="lazy" decoding="async" src="https://adrianemberley.ca/wp-content/uploads/2026/02/IMG_5827-948x1024.jpg" alt="Painting I artwork">
+        <img loading="lazy" decoding="async" src="https://adrianemberley.ca/wp-content/uploads/2026/02/IMG_5827-948x1024.jpg" alt="">
       </figure>
-      <figure>
-        <img loading="lazy" decoding="async" src="https://adrianemberley.ca/wp-content/uploads/2026/02/IMG_2741-858x1024.jpg" alt="Painting I artwork">
+      <figure class="bottom-row">
+        <img loading="lazy" decoding="async" src="https://adrianemberley.ca/wp-content/uploads/2026/02/IMG_2741-858x1024.jpg" alt="">
       </figure>
-      <figure>
-        <img loading="lazy" decoding="async" src="https://adrianemberley.ca/wp-content/uploads/2026/02/IMG_3698-1-825x1024.jpg" alt="Painting I artwork">
+      <figure class="bottom-row">
+        <img loading="lazy" decoding="async" src="https://adrianemberley.ca/wp-content/uploads/2026/02/IMG_3698-1-825x1024.jpg" alt="">
       </figure>
     </section>
   </main>
