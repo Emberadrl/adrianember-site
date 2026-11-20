@@ -22,9 +22,15 @@
     .bottom-row { width: 112%; }
     .bottom-row:nth-of-type(odd) { margin-left: -6%; }
     .bottom-row:nth-of-type(even) { margin-left: -6%; }
+    .bottom-row.enlarged { width: 125%; margin-left: -12.5%; }
     figcaption { margin-top: 8px; }
     footer { border-top: 1px solid #d5dddd; padding: 28px max(5vw, 24px); text-align: center; font-size: .9rem; }
-    @media (max-width: 640px) { .header-inner { align-items: flex-start; flex-direction: column; } .gallery { grid-template-columns: 1fr; gap: 20px; } figure.featured, .bottom-row, .bottom-row:nth-of-type(odd), .bottom-row:nth-of-type(even) { width: 100%; margin-left: 0; } main { padding-top: 32px; } }
+    @media (max-width: 640px) {
+      .header-inner { align-items: flex-start; flex-direction: column; }
+      .gallery { grid-template-columns: 1fr; gap: 20px; }
+      figure.featured, .bottom-row, .bottom-row:nth-of-type(odd), .bottom-row:nth-of-type(even) { width: 100%; margin-left: 0; }
+      .bottom-row.enlarged { width: 100%; margin-left: 0; }
+    }
   </style>
 </head>
 <body>
@@ -56,7 +62,7 @@
       <figure>
         <img loading="lazy" decoding="async" src="https://adrianemberley.ca/wp-content/uploads/2026/02/IMG_5827-948x1024.jpg" alt="">
       </figure>
-      <figure class="bottom-row">
+      <figure class="bottom-row enlarged">
         <img loading="lazy" decoding="async" src="https://adrianemberley.ca/wp-content/uploads/2026/02/IMG_2741-858x1024.jpg" alt="">
       </figure>
       <figure class="bottom-row">
