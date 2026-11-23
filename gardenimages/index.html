@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://adrianemberley.ca/gardenimages/">
+  <title>Gardenimages - Adrian Emberley</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f6fdfd; color: #272727; font: 16px/1.55 Inter, Arial, sans-serif; }
+    a { color: inherit; }
+    header { background: rgba(210,235,130,0.55); padding: 20px max(5vw, 24px); }
+    .header-inner { max-width: 1280px; margin: auto; display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+    .brand { text-decoration: none; font-weight: 600; }
+    nav { display: flex; flex-wrap: wrap; gap: 22px; }
+    main { max-width: 1280px; margin: 0 auto; padding: 48px max(5vw, 24px); }
+    .gallery { max-width: 640px; margin: 0 auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; align-items: start; }
+    figure { margin: 0; }
+    figure img { display: block; width: 100%; height: auto; }
+    figcaption { margin-top: 8px; }
+    footer { border-top: 1px solid #d5dddd; padding: 28px max(5vw, 24px); text-align: center; font-size: .9rem; }
+    @media (max-width: 640px) { .header-inner { align-items: flex-start; flex-direction: column; } .gallery { grid-template-columns: 1fr; gap: 20px; } main { padding-top: 32px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a class="brand" href="https://adrianemberley.ca/">Adrian Emberley</a>
+      <nav aria-label="Main navigation">
+        <a href="https://adrianemberley.ca/">Home</a>
+        <a href="https://adrianemberley.ca/painting-i/">Recent painting</a>
+        <a href="https://adrianemberley.ca/painting-ii/">Watercolours</a>
+        <a href="https://adrianemberley.ca/painting-iii/">Painting III</a>
+        <a href="https://adrianemberley.ca/gardenimages/" aria-current="page">Gardenimages</a>
+        <a href="https://adrianemberley.ca/about/">About</a>
+        <a href="https://adrianemberley.ca/contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="gallery" aria-label="Gardenimages gallery">
+      <figure><img src="garden-1.jpg" alt="Garden image 1"></figure>
+      <figure><img src="garden-2.jpg" alt="Garden image 2"></figure>
+      <figure><img src="garden-3.jpg" alt="Garden image 3"></figure>
+      <figure><img src="garden-4.jpg" alt="Garden image 4"></figure>
+    </section>
+  </main>
+  <footer>Designed with <a href="https://github.com/">GitHub</a></footer>
+</body>
+</html>
